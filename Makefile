@@ -13,7 +13,7 @@ clean:
 
 release: clean build
 	github-release release --user $(USER) --repo $(REPO) --tag $(VERSION) -s $(TOKEN)
-	github-release upload --user $(USER) --repo envplate --tag $(VERSION) -s $(TOKEN) --name awsips-osx --file out/darwin/awsips
+	github-release upload --user $(USER) --repo $(REPO) --tag $(VERSION) -s $(TOKEN) --name awsips-osx --file out/darwin/awsips
 	github-release upload --user $(USER) --repo $(REPO) --tag $(VERSION) -s $(TOKEN) --name awsips-linux --file out/linux/awsips
 
 test:
