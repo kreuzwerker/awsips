@@ -1,5 +1,7 @@
 # AWS IPs
 
+[![Build Status](https://travis-ci.org/kreuzwerker/awsips.svg?branch=master)](https://travis-ci.org/kreuzwerker/awsips)
+
 Commandline utility (`awsips`) to query IP addresses used by Amazon Web Services.
 
 The tool has to be used in one of several modes (`-m` flag):
