@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	c "github.com/yawn/awsips"
+	c "github.com/kreuzwerker/awsips"
 )
 
 var build string
