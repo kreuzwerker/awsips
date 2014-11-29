@@ -1,6 +1,6 @@
 # AWS IPs
 
-Client utility (`awsips`) to query IP addresses used by Amazon Web Services.
+Commandline utility (`awsips`) to query IP addresses used by Amazon Web Services.
 
 The tool has to be used in one of several modes (`-m` flag):
 
@@ -14,7 +14,7 @@ When using a list mode, the resulting output can be filtered by:
 * region or multiple, comma-seperated regions (`-rf` flag)
 * service or multiple, comma-seperated services (`-sf` flag)
 
-The JSON (including the IP addresses) emitted by `awsip` is always sorted lexicographically to make diffing and checksum generation easier. 
+The JSON (including the IP addresses) emitted by `awsip` is always sorted lexicographically to make diffing and checksum generation easier.
 
 ## Example
 
