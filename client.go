@@ -32,9 +32,9 @@ var Client = func() (*Result, error) {
 }
 
 type Result struct {
-	SyncToken  string
 	CreateDate string
 	Prefixes   []Prefix
+	SyncToken  string
 }
 
 type Prefix struct {

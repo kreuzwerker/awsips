@@ -19,7 +19,8 @@ func TestRegions(t *testing.T) {
 
 	t.Parallel()
 
-	regions := newSortedSet(_result(t).Regions()...)
+	assert := assert.New(t)
+	set := newSortedSet(_result(t).Regions()...)
 
 	for _, region := range []string{
 		"GLOBAL",
@@ -35,7 +36,7 @@ func TestRegions(t *testing.T) {
 		"us-west-1",
 		"us-west-2",
 	} {
-		assert.True(t, regions.IsIncluded(region))
+		assert.True(set.IsIncluded(region))
 	}
 
 }
@@ -44,7 +45,8 @@ func TestServices(t *testing.T) {
 
 	t.Parallel()
 
-	services := newSortedSet(_result(t).Services()...)
+	assert := assert.New(t)
+	set := newSortedSet(_result(t).Services()...)
 
 	for _, service := range []string{
 		"AMAZON",
@@ -53,7 +55,7 @@ func TestServices(t *testing.T) {
 		"ROUTE53",
 		"ROUTE53_HEALTHCHECKS",
 	} {
-		assert.True(t, services.IsIncluded(service))
+		assert.True(set.IsIncluded(service))
 	}
 
 }
