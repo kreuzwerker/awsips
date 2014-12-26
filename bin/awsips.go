@@ -99,6 +99,6 @@ func printUsage() {
 	fmt.Fprintf(os.Stderr, "Usage of %s (%s):\n", os.Args[0], build)
 	flag.PrintDefaults()
 
-	os.Exit(1)
+	os.Exit(0)
 
 }
