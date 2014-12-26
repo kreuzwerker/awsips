@@ -1,7 +1,7 @@
 TOKEN = `cat .token`
 REPO := awsips
 USER := kreuzwerker
-VERSION := "v0.0.1"
+VERSION := "v0.0.2"
 
 build:
 	mkdir -p out/darwin out/linux
