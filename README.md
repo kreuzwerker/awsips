@@ -94,7 +94,7 @@ Results in:
 }
 ```
 
-## Cloudfront: list-stack
+## Cloudformation: list-stack
 
 ```
 $ awsips -m list-stack -sf CLOUDFRONT -p 80,443 | tee stack.json
@@ -105,7 +105,7 @@ Results in:
 ```
 {
     "AWSTemplateFormatVersion": "2010-09-09",
-    "Description": "Ingress Security Group via out/darwin/awsips -m list-stack -sf CLOUDFRONT -p 80,443",
+    "Description": "Ingress Security Group via awsips -m list-stack -sf CLOUDFRONT -p 80,443",
     "Outputs": {
         "cloudfrontGlobal": {
             "Value": {
@@ -334,5 +334,5 @@ Results in:
 When using the official [AWS CLI](http://aws.amazon.com/cli/) the corresponding stack could be created with a line like this:
 
 ``` 
-aws cloudformation create-stack --stack-name cfingress --template-body file://stack.json --parameters ParameterKey=vpc,ParameterValue=vpc-12345678
+aws cloudformation create-stack --stack-name test --template-body file://stack.json --parameters ParameterKey=vpc,ParameterValue=vpc-12345678
 ```
