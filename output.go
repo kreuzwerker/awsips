@@ -64,7 +64,7 @@ func (o *Output) Stack(regionFilters, serviceFilters, portSpecs *string) (string
 	pa := no.N("Parameters")
 
 	pa.N("vpc").
-		L("Type", "String")
+		L("Type", "AWS::EC2::VPC::Id")
 
 	op := no.N("Outputs")
 
